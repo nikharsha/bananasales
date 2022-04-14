@@ -53,7 +53,7 @@ async function main() {
 
   let openSeaFetch = {}
   if (process.env.OPENSEA_TOKEN) {
-    openSeaFetch['headers'] = {'X-API-KEY': process.env.OPENSEA_TOKEN}
+    openSeaFetch['headers'] = {'X-API-KEY': process.env.API_KEY}
   }
 
   let responseText = "";
