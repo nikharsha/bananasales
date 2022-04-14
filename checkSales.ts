@@ -37,7 +37,7 @@ const buildMessage = (sale: any) => (
 )
 
 async function main() {
-  const seconds = process.env.SECONDS ? parseInt(process.env.SECONDS) : 3_600;
+  const seconds = process.env.SECONDS ? parseInt(process.env.SECONDS) : 0_600;
   const hoursAgo = (Math.round(new Date().getTime() / 1000) - (seconds)); // in the last hour, run hourly?
   
   const params = new URLSearchParams({
