@@ -97,4 +97,8 @@ main()
   .then((res) =>{ 
     if (!res.length) console.log("No recent sales")
     process.exit(0)
-}
+  })
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  });
