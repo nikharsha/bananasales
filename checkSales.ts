@@ -97,3 +97,4 @@ main()
   .then((res) =>{ 
     if (!res.length) console.log("No recent sales")
     process.exit(0)
+}
