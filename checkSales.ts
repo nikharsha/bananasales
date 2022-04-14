@@ -41,7 +41,6 @@ async function main() {
   const hoursAgo = (Math.round(new Date().getTime() / 1000) - (seconds)); // in the last hour, run hourly?
   
   const params = new URLSearchParams({
-    offset: '0',
     event_type: 'successful',
     only_opensea: 'false',
     occurred_after: hoursAgo.toString(), 
